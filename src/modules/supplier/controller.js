@@ -1,7 +1,7 @@
 const { insert, select, search, edit, update, deletee } = require('./model')
 
 const INSERT = (req, res) => {
-    res.header('Access-Control-Allow-Origin', '*')
+    res.header('Access-Control-Allow-Origin', 'https://logisticreact.netlify.app')
     insert(req.body)
 }
 const SELECT = async(req, res) => {
