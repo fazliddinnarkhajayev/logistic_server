@@ -5,9 +5,11 @@ const GET = async(req, res) => {
     res.json(await get_loads())
 }
 const POST = (req, res) => {
+    res.header('Access-Control-Allow-Origion', 'https://logisticreact.netlify.app');
     post_load(req.body)
 }
 const SEARCH = async(req, res) => {
+    res.header('Access-Control-Allow-Origion', 'https://logisticreact.netlify.app');
    res.json(await search_loads(req.params))
 }
 module.exports = {
